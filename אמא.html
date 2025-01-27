@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>הנצחת זכרה של [שם האישה]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 10px 0;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        img, video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .memory {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f7e7;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+        }
+        .donation-section {
+            margin-top: 30px;
+            background-color: #f2f2f2;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .donation-section a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .upload-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .upload-form input[type="file"],
+        .upload-form textarea,
+        .upload-form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .upload-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>הנצחת זכרה של [שם האישה]</h1>
+    <p>[תאריך לידה] - [תאריך פטירה]</p>
+</header>
+
+<nav>
+    <a href="#bio">סיפור חיים</a>
+    <a href="#gallery">גלריה</a>
+    <a href="#memories">דברי זיכרון</a>
+    <a href="#donations">תרומות</a>
+    <a href="#upload">העלאת תוכן</a>
+</nav>
+
+<div class="container">
+
+    <!-- סיפור חיים -->
+    <div class="section" id="bio">
+        <h2>סיפור חיים</h2>
+        <p>הייתה אישה נהדרת, אמא אוהבת, חברה נאמנה ופעילה בקהילה. [הכנס מידע נוסף על חייה].</p>
+    </div>
+
+    <!-- גלריית תמונות וסרטונים -->
+    <div class="section" id="gallery">
+        <h2>תמונות וסרטונים</h2>
+        <img src="image1.jpg" alt="תמונה אהובה 1">
+        <img src="image2.jpg" alt="תמונה אהובה 2">
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            הדפדפן שלך לא תומך בהצגת סרטונים.
+        </video>
+    </div>
+
+    <!-- דברי זיכרון -->
+    <div class="section" id="memories">
+        <h2>דברי זיכרון</h2>
+        <div class="memory">
+            <p>"הייתה אמא נהדרת, תמיד עם חיוך על הפנים!"</p>
+            <p>- [שם חבר/ה]</p>
+        </div>
+        <div class="memory">
+            <p>"נפלאה בכל דרך. לא נשכח אותך." </p>
+            <p>- [שם משפחה]</p>
+        </div>
+    </div>
+
+    <!-- תרומות -->
+    <div class="section donation-section" id="donations">
+        <h2>תרומות לזכרה</h2>
+        <p>לתרום לארגון שמוקם לזכרה, ניתן לעשות זאת דרך הקישור הבא:</p>
+        <a href="https://www.example.com/donate" target="_blank">תרום עכשיו</a>
+    </div>
+
+    <!-- העלאת תוכן -->
+    <div class="section" id="upload">
+        <h2>העלה סרטונים, תמונות או דברי זיכרון</h2>
+        <form class="upload-form" method="post" enctype="multipart/form-data">
+            <label for="file-upload">בחר תמונה או סרטון להעלות:</label>
+            <input type="file" id="file-upload" name="file-upload" accept="image/*, video/*">
+            <label for="memory-text">כתוב דברי זיכרון:</label>
+            <textarea id="memory-text" name="memory-text" rows="4" placeholder="הכנס דברי זיכרון כאן..."></textarea>
+            <button type="submit">העלה</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 הנצחה לזכרה של [שם האישה]. כל הזכויות שמורות.</p>
+</footer>
+
+</body>
+</html>
