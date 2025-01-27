@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>זיכרון לאישה היקרה</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffccff, #ccffff);
+            color: #333;
+        }
+        header {
+            background: #ff6f61;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: #ff6f61;
+            background: #fff;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #ff6f61;
+            color: #fff;
+        }
+        section {
+            margin: 2rem;
+            padding: 1rem;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #ff6f61;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>זיכרון לאישה היקרה</h1>
+    </header>
+    <nav>
+        <a href="#memories">זכרונות</a>
+        <a href="#gallery">גלריה</a>
+        <a href="#donations">תרומות</a>
+        <a href="#contact">צור קשר</a>
+    </nav>
+    <section id="memories">
+        <h2>זכרונות</h2>
+        <p>כאן תוכלו לשתף זכרונות, להעלות תמונות ולהכניס קישורים לסרטונים.</p>
+        <textarea placeholder="כתבו את הזיכרון שלכם כאן..."></textarea>
+    </section>
+    <section id="gallery">
+        <h2>גלריה</h2>
+        <p>כאן תוכלו להעלות תמונות ולהכניס קישורים לסרטונים.</p>
+        <input type="file" accept="image/*">
+        <input type="url" placeholder="הכניסו קישור לסרטון">
+    </section>
+    <section id="donations">
+        <h2>תרומות</h2>
+        <p>כאן תוכלו לתרום לזכרונה של האישה היקרה.</p>
+        <button>תרום עכשיו</button>
+    </section>
+    <section id="contact">
+        <h2>צור קשר</h2>
+        <p>כאן תוכלו להשאיר פרטים ליצירת קשר.</p>
+        <form>
+            <label for="name">שם:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">אימייל:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">הודעה:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">שלח</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; זיכרון לאישה היקרה - כל הזכויות שמורות</p>
+    </footer>
+</body>
+</html>
